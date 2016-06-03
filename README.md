@@ -1,5 +1,6 @@
 # Rootear tablet canaima TR10CS1
 
+# Instrucciones a seguir
 Es posible que sea necesario editar o crear el archivo /etc/udev/rules.d/99-android.rules con este contenido (Con permisos de superusuario):
 
 >SUBSYSTEM=="usb", ATTR{idVendor}=="8087", ATTR{idProduct}=="09ef", MODE="0666", GROUP="plugdev"
