@@ -1,13 +1,6 @@
-Root para tablets canaima TR10CS1 via GNU/Linux
-===============================================
+# Rootear tablet canaima TR10CS1
 
-Para leer el proceso ingresa a [Rootear tablet canaima TR10CS1](http://comunidad.hackerdiy.com/t/rootear-tablet-canaima-tr10cs1/21)
-
-===============================================
-
-# Instrucciones a seguir
-
-Es posible que sea necesario editar o crear el archivo /etc/udev/rules.d/99-android.rules con este contenido:
+Es posible que sea necesario editar o crear el archivo /etc/udev/rules.d/99-android.rules con este contenido (Con permisos de superusuario):
 
 >SUBSYSTEM=="usb", ATTR{idVendor}=="8087", ATTR{idProduct}=="09ef", MODE="0666", GROUP="plugdev"
 
@@ -71,3 +64,5 @@ y finalmente esto:
 ```
 **Finalmente!**
 Con eso entraremos al recovery de CWM y desde allí seleccionamos el archivo en la microSD para instalar los binarios SU.
+
+
